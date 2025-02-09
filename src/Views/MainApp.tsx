@@ -16,7 +16,7 @@ export default function MainApp() {
                 <h2>The Basic Language of the Web: HTML</h2>
 
                 <img
-                    src="img/laura-jones.jpg"
+                    src="src/img/laura-jones.jpg"
                     alt="Headshot of Laura Jones"
                     height="50"
                     width="50"
@@ -25,7 +25,7 @@ export default function MainApp() {
                 <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 
                 <img
-                    src="img/post-img.jpg"
+                    src="src/img/post-img.jpg"
                     alt="HTML code on a screen"
                     width="500"
                     height="200"
@@ -100,7 +100,7 @@ export default function MainApp() {
             <ul>
                 <li>
                     <img
-                        src="img/related-1.jpg"
+                        src="src/img/related-1.jpg"
                         alt="Person programming"
                         width="75"
                     />
@@ -108,13 +108,13 @@ export default function MainApp() {
                     <p>By Jonas Schmedtmann</p>
                 </li>
                 <li>
-                    <img src="img/related-2.jpg" alt="Lightning" width="75" height="75" />
+                    <img src="src/img/related-2.jpg" alt="Lightning" width="75" height="75" />
                     <a href="#">The Unknown Powers of CSS</a>
                     <p>By Jim Dillon</p>
                 </li>
                 <li>
                     <img
-                        src="img/related-3.jpg"
+                        src="src/img/related-3.jpg"
                         alt="JavaScript code on a screen"
                         width="75"
                         height="75"
