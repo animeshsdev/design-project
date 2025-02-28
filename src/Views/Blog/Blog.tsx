@@ -2,21 +2,19 @@ import './Blog.scss';
 
 const Blog: React.FC<unknown> = () => {
     return (<div className="blog-container">
-        <header className = 'main-header'>
+        <header className='main-header'>
             <h1>📘 The Cod1se Magazine</h1>
 
-            <nav>
-                <a href="#">Blog</a>
-                <a href="#">Challenges</a>
-                <a href="#">Flexbox</a>
-                <a href="#">CSS Grid</a>
+            <nav className='blog-nav'>
+                <a className='blog-nav-a' href="#">Blog</a>
+                <a className='blog-nav-a' href="#">Challenges</a>
+                <a className='blog-nav-a' href="#">Flexbox</a>
+                <a className='blog-nav-a' href="#">CSS Grid</a>
             </nav>
         </header>
-
         <article>
-            <header>
+            <header className='header-2'>
                 <h2>The Basic Language of the Web: HTML</h2>
-
                 <img
                     src="src/img/laura-jones.jpg"
                     alt="Headshot of Laura Jones"
@@ -24,14 +22,14 @@ const Blog: React.FC<unknown> = () => {
                     width="50"
                 />
 
-                <p>Posted by <strong className='main-author'>Laura Jones</strong> on Monday, June 21st 2027</p>
-
+                <p className='image-txt'>Posted by <strong className='main-author'>Laura Jones</strong> on Monday, June 21st 2027</p>
                 <img
                     src="src/img/post-img.jpg"
                     alt="HTML code on a screen"
-                    width="500"
-                    height="200"
+                    className='code-image'
                 />
+                <button className='like-button'>Like Post ❤️
+                </button>
             </header>
 
             <p>
@@ -60,7 +58,7 @@ const Blog: React.FC<unknown> = () => {
             </p>
             <p>In HTML, each element is made up of 3 parts:</p>
 
-            <ol>
+            <ol className="ol-list">
                 <li>The opening tag</li>
                 <li>The closing tag</li>
                 <li>The actual element</li>
@@ -82,7 +80,7 @@ const Blog: React.FC<unknown> = () => {
                 web. Here are 5 of them:
             </p>
 
-            <ul>
+            <ul className="ul-list">
                 <li>To be able to use the fundamental web dev language</li>
                 <li>
                     To hand-craft beautiful websites instead of relying on tools like
@@ -96,7 +94,7 @@ const Blog: React.FC<unknown> = () => {
             <p>Hopefully you learned something new here. See you next time!</p>
         </article>
 
-        <aside className = 'related-post'>
+        <aside className='related-post'>
             <h4>Related posts</h4>
 
             <ul className='unordered-list'>
@@ -126,7 +124,7 @@ const Blog: React.FC<unknown> = () => {
                 </li>
             </ul>
         </aside>
-
+        <div></div>
         <footer className='copyright'>Copyright &copy; 2027 by The Code Magazine.</footer>
     </div>)
 }
