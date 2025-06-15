@@ -1,4 +1,4 @@
-import MainApp from './Views/MainApp.tsx';
+import MainApp from './assets/Views/MainApp.tsx';
 
 function App() {
   return (

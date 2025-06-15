@@ -1,0 +1,220 @@
+* {
+    // Page Basic settings ->
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    // General Paragraph settings:
+    p {
+        font-size: 22px;
+        line-height: 1.5;
+        margin: 20px 0;
+    }
+}
+
+.blog-container {
+    border-top: 5px solid #1098ad;
+    margin: 0 50px;
+    // display: flex;
+    // flex-direction: column;
+
+    // all links we want same style
+    // order important: lvha
+    a:link {
+        // if given classname, then we can use that test:link
+        color: #1098ad;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #1098ad
+    }
+
+    a:hover {
+        color: orangered;
+        font-weight: 800;
+    }
+
+    a:active {
+        color: red;
+        background-color: black;
+    }
+
+    .main-header {
+        background-color: #f7f7f7;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            color: #1098ad;
+            font-size: 26px;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        .blog-nav {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    .row {
+        display: flex;
+        gap: 80px;
+        padding-top: 20px;
+        align-items: flex-start;
+
+        .article-content {
+            flex: 1;
+            .ac-header {
+                h2 {
+                    color: #1098ad;
+                    font-size: 40px;
+                    margin: 20px 0;
+                    position: relative;
+                }
+
+                h2::after {
+                    content: "TOP";
+                    font-size: 10px;
+                    color: #444;
+                    background-color: yellow;
+                    display: inline-block;
+                    padding: 5px 5px;
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                }
+
+                .code-image {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .ac-auth-details {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+
+                    .image-txt {
+                        font-size: 12px;
+                        margin-bottom: 25px 0;
+                    }
+
+                    .main-author {
+                        font-style: italic;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .ac-content {
+                h3 {
+                    color: #1098ad;
+                    font-size: 30px;
+                }
+
+                .ol-list {
+                    margin-left: 40px;
+
+                    li {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+
+                    // just for ref:
+                    // li:first-child {
+                    //     font-weight: bold;
+                    // }
+
+                    // li:last-child {
+                    //     font-style: italic;
+                    //     margin-bottom: 0;
+                    // }
+                }
+
+                .ul-list-data {
+                    margin-left: 40px;
+                    list-style-type: disc;
+
+                    li {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+
+
+                    // just for ref:
+
+                    // li:first-child {
+                    //     font-weight: bold;
+                    // }
+
+                    // li:last-child {
+                    //     font-style: italic;
+                    //     margin-bottom: 0;
+                    // }
+                }
+            }
+        }
+
+        .related-post {
+            flex: 0 1 250px;
+            padding: 40px 40px;
+            background-color: #f7f7f7;
+            border-top: 5px solid #1098ad;
+            border-bottom: 5px solid #1098ad;
+            position: relative;
+            margin-top: 20px;
+
+            h4 {
+                font-size: 20px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .unordered-list {
+                margin-top: 10px;
+                list-style: none;
+
+                .ul-li {
+                    display: flex;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    align-items: center;
+                    gap: 10px;
+
+                    .ul-li-text {
+                        font-weight: bold;
+
+                        .related-author {
+                            font-size: 14px;
+                            margin: 0 0px;
+                            font-style: italic;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+
+            .like-button {
+                margin-top: 10px;
+                padding: 15px;
+                color: black;
+                background-color: rgb(242, 240, 240);
+                border: 1px solid #444;
+                cursor: pointer;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 15px;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+    }
+}
