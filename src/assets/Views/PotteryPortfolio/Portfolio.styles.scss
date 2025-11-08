@@ -1,0 +1,86 @@
+body {
+    background-color: #fff;
+    font-family: "Cormorant", serif;
+}
+
+.pp-main-container {
+    .pp-page-header {
+        margin: 32px;
+
+        h1 {
+            display: inline-block;
+            font-weight: 300;
+            margin: 0 32px 0 0;
+        }
+
+        .pp-page-nav {
+            display: inline-block;
+
+            ul {
+                padding: 0;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        font-size: 20px;
+                        color: black;
+                        text-decoration: none;
+                        margin: 0 8px;
+                    }
+
+                    a.active {
+                        // text-decoration-line: underline;
+                        // text-decoration-thickness: 2px;
+                        border-bottom: 2px solid black;
+                        padding-bottom: 1px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pp-main-content {
+        padding: 14px;
+
+        .card {
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 20px;
+            width: 50%; // html has a weird issue but we dont have to worry in vite/react          
+
+            h2 {
+                font-weight: 300;
+                margin: 8px 0 16px 0;
+            }
+
+            img {
+                height: 500px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .pp-main-footer {
+        font-weight: 300;
+        font-size: 30px;
+        margin: 50px 230px;
+        width: 25%;
+        min-width: 500px;
+
+        .footer-sub {
+            border-bottom: 2px solid black;
+            padding-bottom: 2px;
+            margin-bottom: 80px;
+            display: inline-block;
+        }
+
+        .footer-email,
+        .footer-num {
+            font-size: 15px;
+            margin: 0;
+            font-weight: 300;
+        }
+    }
+}

@@ -1,6 +1,9 @@
 //import Blog from './Blog/Blog';
 // import FlexDummy from './Practise/Practise'; 
-import { GridLayout } from './Practise/Practise';
+//import { GridLayout } from './Practise/Practise';
+// import LearnRenderer from './Learn/Learn';
+import PotteryPortfolio from './PotteryPortfolio/Portfolio';
+
 import ErrorBoundary from '../Components/ErrorBoundary/ErrorBoundary';
 
 const MainApp: React.FC<unknown> = () => {
@@ -10,7 +13,9 @@ const MainApp: React.FC<unknown> = () => {
 
             {/* <Blog />   */}
             {/* <FlexDummy /> */}
-            <GridLayout />
+            {/* <GridLayout /> */}
+            {/* <LearnRenderer /> */}
+            <PotteryPortfolio />
         </ErrorBoundary>
     )
 }

@@ -1,0 +1,51 @@
+body {
+    background-color: #463d36;
+    font-family: sans-serif;
+}
+
+#card-container {
+    background-color: #fff;
+    height: 300px;
+    width: 600px;
+    margin: 100px auto;
+    border-radius: 15px;
+    padding: 40px;
+    box-sizing: border-box;
+
+    #card-data {
+        height: 220px;
+    }
+
+    .time-banner {
+        color: #a6192e;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .header {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 28px;
+        color: #463d36;
+    }
+
+    .content-txt {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .action-btn { 
+        margin-top: 10px;
+        padding: 30px 40px;
+        color: white;
+        text-transform: uppercase;
+        background-color: #463d36;
+        border-radius: 2px;
+        font-size: 24px;
+        font-weight: bold;
+        box-shadow: inset 1px 1px 2px #463d36;
+    }
+}
