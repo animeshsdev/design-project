@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    border: 1px solid red;
+    height: 400px;
+    width: 200px;
+    background-image: url("src/img/food.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.box2 {
+    margin: 120px 120px;
+    border: 1px solid red;
+    height: 600px;
+    width: 800px;
+    background-image: conic-gradient(red, yellow 30% 50%, purple, red);
+    // radial-gradient(circle at center, yellow, blue 60%, red);
+    // /linear-gradient(90deg,white, cyan, yellow, red, blue, purple);
+}
