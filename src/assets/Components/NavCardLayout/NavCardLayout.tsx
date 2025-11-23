@@ -1,6 +1,6 @@
 import './Practise.styles.scss';
 
-const Practise = () => {
+const NavCardLayout = () => {
     return (<>
         <div className='container'>
             <nav className='navbar'>
@@ -34,4 +34,4 @@ const Practise = () => {
         </div>
     </>)
 }
-export default Practise;
+export default NavCardLayout;
