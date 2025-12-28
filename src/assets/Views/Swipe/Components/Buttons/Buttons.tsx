@@ -7,13 +7,19 @@ interface BtnProps {
 export const PrimaryBtn = ({ btnText }: BtnProps) => {
     return <>
         <button className='primary-button with-icon'> {btnText}
-            <img alt="arrow" src={"src/img/Swipe/arrow-right-light.svg"} />
+            <img alt="PrimaryBtn" src={"src/img/Swipe/arrow-right-light.svg"} />
         </button></>
 }
 
 export const SecondaryBtn = ({ btnText }: BtnProps) => {
     return <>
         <button className='secondary-button with-icon'> {btnText}
-            <img alt="arrow" src={"src/img/Swipe/arrow-right-dark.svg"} />
+            <img alt="SecondaryBtn" src={"src/img/Swipe/arrow-right-dark.svg"} />
+        </button></>
+}
+
+export const PrimaryBtn2 = ({ btnText }: BtnProps) => {
+    return <>
+        <button className='primary-button btn-variant-2'> {btnText}
         </button></>
 }

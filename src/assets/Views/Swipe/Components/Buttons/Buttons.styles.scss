@@ -16,6 +16,14 @@
             transform: translateX(5px);
         }
     }
+
+    &.btn-variant-2 {
+        background-color: rgba(250, 250, 250, 0.25);
+
+        &:hover {
+            background-color: rgba(250, 250, 250, 0.5);
+        }
+    }
 }
 
 .secondary-button {

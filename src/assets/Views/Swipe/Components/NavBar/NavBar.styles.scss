@@ -1,0 +1,24 @@
+@import '../../Styles/SwipeCore.styles.scss';
+
+.swipe-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--standard-width);
+
+    .nav-links-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+
+        a {
+            text-decoration: underline;
+            color: var(--text-light);
+            margin: 0 var(--spacing-md);
+            font-weight: bold;
+        }
+    }
+}

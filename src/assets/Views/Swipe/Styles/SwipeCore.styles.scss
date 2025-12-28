@@ -26,6 +26,7 @@
     --secondary-text-size: 14px;
     --secondary-text-height: 18px;
     --button-size: 16px;
+    --standard-width: 1144px;
 
     //heights
     --h1-height: 108px;
@@ -106,7 +107,7 @@ h6 {
     font-weight: 500;
     font-size: var(--h6-size);
     margin: 0;
-    width: 100%; 
+    width: 100%;
 }
 
 a {
