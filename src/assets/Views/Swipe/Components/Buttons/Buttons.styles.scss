@@ -1,0 +1,37 @@
+@import '../../Styles/SwipeCore.styles.scss';
+
+.primary-button {
+    &.with-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            transition: all 0.25s ease;
+        }
+    }
+
+    &.with-icon:hover {
+        img {
+            transform: translateX(5px);
+        }
+    }
+}
+
+.secondary-button {
+    &.with-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            transition: all 0.25s ease;
+        }
+    }
+
+    &.with-icon:hover {
+        img {
+            transform: translateX(5px);
+        }
+    }
+}
