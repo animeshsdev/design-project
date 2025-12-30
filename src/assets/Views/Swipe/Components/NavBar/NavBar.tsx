@@ -4,7 +4,7 @@ import './NavBar.styles.scss';
 const NavBar = () => {
     const appLinks: string[] = ["Products", "Solutions", "Developers", "Resources", "Pricing"];
 
-    return <nav className='swipe-navbar'>
+    return <nav className='swipe-navbar section-container'>
         <img alt="swipe-logo" src="src/img/Swipe/logo-white.svg" />
         <ul className='nav-links-list'>
             {

@@ -1,0 +1,30 @@
+.payment-hero-container {
+    margin: var(--spacing-sm) 0 0 0;
+
+    .left-sec-text {
+        max-width: 500px;
+    }
+
+    .btn-container {
+        display: flex;
+        margin: var(--spacing-md) 0;
+    }
+
+    button:nth-of-type(2) {
+        margin-left: var(--spacing-md);
+        color: var(--purple-1);
+
+        img {
+            color: var(--purple-1)
+        }
+    }
+
+    .hero-phone-img {
+        height: 630px;
+        transform: translate(40px, -80px);
+    }
+
+    .two-column .col-right {
+        align-items: flex-end;
+    }
+}
