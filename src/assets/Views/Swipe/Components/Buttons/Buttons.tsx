@@ -14,7 +14,7 @@ export const PrimaryBtn = ({ btnText }: BtnProps) => {
 export const SecondaryBtn = ({ btnText }: BtnProps) => {
     return <>
         <button className='secondary-button with-icon'> {btnText}
-            <img alt="SecondaryBtn" src={"src/img/Swipe/arrow-right-dark.svg"} />
+            <img alt="SecondaryBtn" src={"src/img/Swipe/arrow-right-purple.svg"} />
         </button></>
 }
 
