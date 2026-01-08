@@ -1,0 +1,37 @@
+.global-section-main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--primary-accent);
+
+    .global-section-container {
+        margin-top: var(--spacing-lg);
+        color: var(--text-light);
+        position: relative;
+
+        a {
+            color: var(--blue-1);
+        }
+
+        .globe-img {
+            height: 506px;
+            opacity: 0.2;
+            position: absolute;
+            bottom:0;
+            right:0
+        }
+
+        .card-container {
+            display: flex;
+            margin-top: calc(var(--spacing-lg) * 2);
+
+            .swipe-card {
+                margin-right: var(--spacing-md);
+
+                p:nth-of-type(2) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

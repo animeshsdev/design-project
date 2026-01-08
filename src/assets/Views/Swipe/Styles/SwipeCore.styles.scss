@@ -40,12 +40,22 @@
     --bg-white: #fff;
     --bg-light: #f7f9fc;
     --primary-button-hover: #6d7a88;
+    --primary-gradient: linear-gradient(
+        101.33deg,
+        #08209a 0.76%,
+        #6563ff 33.33%,
+        #36c5f0 76.92%,
+        #83e2ff 96.96%
+    );
 
     // spacing
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 32px;
     --spacing-xl: 64px;
+
+    // box-shadow
+    --standard-box-shadow: 0px 2px 40px rgba(0,0,0,0.15);
 }
 
 body {

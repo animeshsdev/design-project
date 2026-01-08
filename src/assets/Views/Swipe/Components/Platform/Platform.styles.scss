@@ -1,7 +1,13 @@
+.platform-section-main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 
-.platform-section-container {
-    margin-top: var(--spacing-xl);
-    h3 {
-        max-width: 50%;
+    .platform-section-container {
+        margin-top: var(--spacing-xl);
+
+        h3 {
+            max-width: 50%;
+        }
     }
 }

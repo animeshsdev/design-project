@@ -1,14 +1,21 @@
-.partner-grid {
-    // background-color: var(--bg-white);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 40px;
+.partner-grid-container {
+    display: flex;
     width: 100%;
+    justify-content: center;
 
-    .partner-grid__item {
-        width:250px;
-        place-self: center ;
+    .partner-grid {
+        // background-color: var(--bg-white);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 40px;
+        width: 100%;
+        place-items: center;
+
+        .partner-grid__item {
+            width: 250px;
+            place-self: center;
+        }
     }
 }

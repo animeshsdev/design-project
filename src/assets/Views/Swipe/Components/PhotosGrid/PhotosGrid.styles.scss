@@ -1,0 +1,42 @@
+.photos-grid-main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .photos-grid-container {
+        margin-top: var(--spacing-xl);
+        width: 100%;
+        display: grid;
+        place-self: center;
+        grid-template-areas:
+            "card slack slack"
+            "phone slack slack"
+            "phone chart chart";
+        gap: var(--spacing-lg);
+
+        #credit-card {
+            grid-area: card;
+            width: 100%;
+            box-shadow: var(--standard-box-shadow);
+        }
+
+        #slack {
+            grid-area: slack;
+            width: 100%;
+            box-shadow: var(--standard-box-shadow);
+        }
+
+        #phone {
+            grid-area: phone;
+            width: 100%;
+            box-shadow: var(--standard-box-shadow);
+        }
+
+        #chart {
+            grid-area: chart;
+            width: 100%;
+            box-shadow: var(--standard-box-shadow);
+        }
+
+    }
+}

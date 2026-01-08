@@ -8,6 +8,7 @@
     flex-direction: column;
 
     .swipe-main-body {
-        margin-top: var(--spacing-xl);
+        width: 100%;
+        margin: var(--spacing-xl) 0 var(--spacing-xl) 0;
     }
 }

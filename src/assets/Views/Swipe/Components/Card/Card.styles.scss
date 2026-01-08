@@ -1,0 +1,19 @@
+
+.swipe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 0;
+
+    .card-img {
+        height: 50px;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .info-card {
+        border-left: 4px solid white;
+        padding-left: 10px;
+        line-height: 28px;
+    }
+}

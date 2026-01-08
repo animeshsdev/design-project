@@ -1,0 +1,32 @@
+.info-main-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--primary-accent);
+
+    .integration-container {
+        margin-top: var(--spacing-lg);
+        color: var(--text-light);
+
+        .card-container {
+            display: flex;
+            width: 100%;
+
+            .swipe-card {
+                width: 50%;
+                margin: var(--spacing-lg) 0;
+            }
+        }
+
+        .integration-source {
+
+            #api-code-img,
+            #terminal-code-img {
+                max-width: 470px;
+                border-radius: 20px;
+                margin: var(--spacing-md) 0 var(--spacing-md) 0;
+            }
+        }
+    }
+
+}
