@@ -1,0 +1,28 @@
+.two-column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.two-column>.col-left {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-md) 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.two-column>.col-right {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 0 0 var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}

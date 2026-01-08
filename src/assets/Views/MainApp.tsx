@@ -5,12 +5,13 @@
 //import Practise from './Practise/Practise';
 import ErrorBoundary from '../Components/ErrorBoundary/ErrorBoundary';
 // import CostEstimator from './CostEstimator/CostEstimator';
-import PotteryPortfolio from './StudioPortfolio/Portfolio';
+//import PotteryPortfolio from './StudioPortfolio/Portfolio';
+import SwipeApp from './Swipe/Swipe';
 
 const MainApp: React.FC<unknown> = () => {
     return (
         <ErrorBoundary>
-            <PotteryPortfolio />
+            <SwipeApp />
         </ErrorBoundary>
     )
 }

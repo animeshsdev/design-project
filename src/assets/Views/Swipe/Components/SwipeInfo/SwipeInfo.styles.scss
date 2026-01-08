@@ -1,0 +1,23 @@
+.swipe-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .swipeinfo-container {
+        margin-top: var(--spacing-lg);
+
+        .card-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+
+            .swipe-card {
+                width: 50%;
+                margin: var(--spacing-lg) 0;
+                margin-right: var(--spacing-md);
+            }
+        }
+    }
+}

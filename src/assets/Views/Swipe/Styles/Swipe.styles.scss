@@ -1,0 +1,14 @@
+@import './SwipeCore.styles.scss';
+
+.swipe-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .swipe-main-body {
+        width: 100%;
+        margin: var(--spacing-xl) 0 var(--spacing-xl) 0;
+    }
+}
