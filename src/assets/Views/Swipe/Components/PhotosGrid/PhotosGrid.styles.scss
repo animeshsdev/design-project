@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    padding: var(--spacing-xl) 0;
 
     .photos-grid-container {
         margin-top: var(--spacing-xl);
@@ -17,25 +18,21 @@
         #credit-card {
             grid-area: card;
             width: 100%;
-            box-shadow: var(--standard-box-shadow);
         }
 
         #slack {
             grid-area: slack;
             width: 100%;
-            box-shadow: var(--standard-box-shadow);
         }
 
         #phone {
             grid-area: phone;
             width: 100%;
-            box-shadow: var(--standard-box-shadow);
         }
 
         #chart {
             grid-area: chart;
             width: 100%;
-            box-shadow: var(--standard-box-shadow);
         }
 
     }

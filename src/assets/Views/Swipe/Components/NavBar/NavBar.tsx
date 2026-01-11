@@ -8,8 +8,8 @@ const NavBar = () => {
         <img alt="swipe-logo" src="src/img/Swipe/logo-white.svg" />
         <ul className='nav-links-list'>
             {
-                appLinks.map((linkName: string) => {
-                    return <li><a href="#">{linkName}</a></li>
+                appLinks.map((linkName: string, idx) => {
+                    return <li key ={`${linkName}-${idx}`}><a href="#">{linkName}</a></li>
                 })
             }
         </ul>

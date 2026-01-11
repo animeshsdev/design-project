@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: calc(var(--spacing-xl) * 3) 0;
 
     .swipeinfo-container {
         margin-top: var(--spacing-lg);
