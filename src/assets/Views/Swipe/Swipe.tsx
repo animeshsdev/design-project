@@ -1,4 +1,4 @@
-import  { useEffect } from 'react';
+import { useEffect } from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import PaymentHero from './Components/PaymentHero/PaymentHero';
 import PartnerGrid from './Components/PartnerGrid/PartnerGrid';
@@ -44,3 +44,4 @@ export default function SwipeApp() {
         <Footer />
     </div>)
 }
+
