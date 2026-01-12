@@ -1,0 +1,47 @@
+.info-main-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    padding: calc(var(--spacing-xl) * 3) 0;
+
+    .integration-container {
+        margin-top: var(--spacing-lg);
+        color: var(--text-light);
+
+        .card-container {
+            display: flex;
+            width: 100%;
+
+            .swipe-card {
+                width: 50%;
+                margin: var(--spacing-lg) 0;
+            }
+        }
+
+        .integration-source {
+
+            #api-code-img,
+            #terminal-code-img {
+                max-width: 470px;
+                border-radius: 20px;
+                margin: var(--spacing-md) 0 var(--spacing-md) 0;
+            }
+        }
+    }
+
+}
+
+// how we will end up adding the angled stripes here !!
+
+.info-main-section::before {
+    content: "";
+    width: 100%;
+    height: 950px;
+    background-color: var(--primary-accent);
+    position: absolute;
+    z-index: -1;
+    transform: skewY(-10deg);
+    top: 106px;
+    left: 0;
+}

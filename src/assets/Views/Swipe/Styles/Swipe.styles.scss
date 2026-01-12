@@ -1,0 +1,372 @@
+@import './SwipeCore.styles.scss';
+
+.swipe-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .swipe-main-body {
+        width: 100%;
+        position: relative;
+        margin: var(--spacing-xl) 0 var(--spacing-xl) 0;
+
+        #gradient-canvas {
+            width: 200%;
+            height: 970px;
+            transform: rotate(-10deg);
+            position: absolute;
+            left: -200px;
+            top: -720px;
+            z-index: -1;
+            --gradient-color-1: #ef008f;
+            --gradient-color-2: #6ec3f4;
+            --gradient-color-3: #7038ff;
+            --gradient-color-4: #ffba27;
+        }
+    }
+}
+
+// These are all the  Media Queries to make the App Responsive 
+// for all screen sizes
+
+@media only screen and (max-width: 1250px) {
+
+    .swipe-main-container {
+        .app-footer {
+            padding: var(--spacing-md);
+
+            .col-container {
+                padding: var(--spacing-md);
+            }
+        }
+
+        .swipe-main-body {
+            .virtual-events-main {
+                .virtual-events-container {
+                    .col-right {
+                        .virtual-info-card {
+                            width: 400px;
+
+                            p {
+                                max-width: 50%;
+                                // font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .section-container {
+                padding: 0 var(--spacing-md);
+            }
+
+            .partner-grid-container {
+                .partner-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            .platform-section-main {
+                .platform-section-container {
+
+                    .subtitle,
+                    h3 {
+                        margin-left: var(--spacing-md);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Custom Screen width
+@media only screen and (max-width: 1050px) {
+    :root {
+        --h1-size: 74px;
+    }
+
+    .swipe-main-container {
+        .swipe-main-body {
+            .payment-hero-container {
+                margin: -30px 0 0 0;
+
+            }
+
+            .info-main-section {
+
+                &::before {
+                    height: 1560px;
+                }
+
+                .integration-container {
+                    .two-column {
+                        flex-direction: column;
+
+                        .col-left {
+                            width: 100%;
+                            padding-right: 0;
+                        }
+
+                        .col-right {
+                            width: 100%;
+                            padding-left: 0;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    .integration-source {
+                        display: flex;
+                        flex-direction: column;
+
+                        #api-code-img,
+                        #terminal-code-img {
+                            max-width: 350px;
+                            border-radius: 20px;
+                            margin: var(--spacing-md) var(--spacing-md) var(--spacing-md) 0;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .app-footer {
+            padding: var(--spacing-md);
+
+            .col-container {
+                padding: var(--spacing-md);
+            }
+        }
+    }
+}
+
+// Tablet Screen
+@media only screen and (max-width: 768px) {
+    :root {
+        --h1-size: 64px;
+        --h1-height: 72px;
+        --h2-size: 34px;
+        --h3-size: 24px;
+    }
+
+    .swipe-main-container {
+        .swipe-navbar {
+            .nav-links-list {
+                display: none;
+            }
+
+            .primary-button {
+                display: none;
+            }
+
+            .nav-ham {
+                display: block;
+                height: 30px;
+                width: 50px;
+                border-radius: 20px;
+                background-color: rgba(250, 250, 250, 0.25);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .nav-ham-bar {
+                    width: 16px;
+                    background-color: var(--bg-white);
+                    height: 2px;
+                    margin: 2px 0;
+                }
+            }
+        }
+
+        .swipe-main-body {
+            .virtual-events-main {
+                .virtual-events-container {
+                    .col-right {
+                        .virtual-info-card {
+                            width: 380px;
+
+                            p {
+                                max-width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .payment-hero-container {
+                margin: -50px 0 0 0;
+
+                .col-right {
+                    img {
+                        height: 540px;
+                        margin-right: var(--spacing-lg);
+                    }
+                }
+            }
+
+            .partner-grid-container {
+                .partner-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            .swipe-main {
+                .swipeinfo-container {
+                    .card-container {
+                        flex-wrap: wrap;
+
+                        .swipe-card {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .virtual-events-main {
+                .virtual-events-container {
+                    margin-top: 0;
+
+                    .two-column {
+                        flex-direction: column;
+
+                        .col-left {
+                            width: 100%;
+                            padding-right: 0;
+                        }
+
+                        .col-right {
+                            margin-top: var(--spacing-lg);
+                            width: 100%;
+                            padding-left: 0;
+                        }
+                    }
+
+                }
+            }
+
+            .register-main {
+                .register-container {
+                    margin-top: 0;
+
+                    .two-column {
+                        flex-direction: column;
+
+                        .col-left {
+                            margin-top: var(--spacing-lg);
+                            width: 100%;
+                            padding-right: 0;
+                        }
+
+                        .col-right {
+                            margin-top: var(--spacing-lg);
+                            width: 100%;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+
+            .global-section-main {
+                .global-section-container {
+
+                    .two-column {
+                        flex-direction: column;
+
+                        .col-left {
+                            width: 100%;
+
+                            p {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info-main-section {
+                .integration-container {
+                    .two-column {
+                        flex-direction: column;
+
+                        .col-left {
+                            width: 100%;
+                            padding-right: 0;
+                        }
+
+                        .col-right {
+                            width: 100%;
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+
+            .platform-section-main {
+                .platform-section-container {
+                    margin-top: 0;
+
+                    .two-column {
+                        flex-direction: column;
+
+                        .col-left {
+                            width: 100%;
+                        }
+
+                        .col-right {
+                            width: 100%;
+                            padding-left: 0;
+                        }
+                    }
+
+                    .primary-button {
+                        margin-left: var(--spacing-md);
+                    }
+
+                    h3 {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile Screen
+@media only screen and (max-width: 550px) {
+    :root {
+        max-width: 100%;
+    }
+
+    .swipe-main-container {
+        .swipe-main-body {
+
+            #gradient-canvas {
+                height: 974px;
+            }
+
+            .payment-hero-container {
+                margin: -90px 0 0 0;
+
+                .col-left {
+                    width: 100%;
+                    padding-right: 0;
+                }
+
+                .col-right {
+                    display: none;
+                }
+            }
+
+            .partner-grid-container {
+                .partner-grid {
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}

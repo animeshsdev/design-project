@@ -1,0 +1,15 @@
+.platform-section-main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--bg-light);
+    padding: var(--spacing-xl) 0;
+
+    .platform-section-container {
+        margin-top: var(--spacing-xl);
+
+        h3 {
+            max-width: 50%;
+        }
+    }
+}

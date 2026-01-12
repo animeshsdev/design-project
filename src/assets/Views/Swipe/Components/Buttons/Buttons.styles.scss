@@ -1,0 +1,60 @@
+@import '../../Styles/SwipeCore.styles.scss';
+
+.primary-button {
+    &.with-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--purple-1);
+
+        img {
+            transition: all 0.25s ease;
+        }
+    }
+
+    &.with-icon:hover {
+        img {
+            transform: translateX(5px);
+        }
+    }
+
+    &.btn-variant-2 {
+        background-color: rgba(250, 250, 250, 0.25);
+
+        &:hover {
+            background-color: rgba(250, 250, 250, 0.5);
+        }
+    }
+
+    &.prm-btn-var3 {
+        color: var(--text-dark);
+        background-color: var(--blue-1);
+
+        &:hover {
+            background-color: var(--text-light);
+        }
+    }
+}
+
+.secondary-button {
+    &.with-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--purple-1);
+
+        img {
+            transition: all 0.25s ease;
+        }
+    }
+
+    &.with-icon:hover {
+        img {
+            transform: translateX(5px);
+        }
+    }
+
+    &.sec-btn-variant-2 {
+        color: var(--blue-1)
+    }
+}
