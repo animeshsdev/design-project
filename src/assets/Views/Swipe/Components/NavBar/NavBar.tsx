@@ -9,11 +9,19 @@ const NavBar = () => {
         <ul className='nav-links-list'>
             {
                 appLinks.map((linkName: string, idx) => {
-                    return <li key ={`${linkName}-${idx}`}><a href="#">{linkName}</a></li>
+                    return <li key={`${linkName}-${idx}`}><a href="#">{linkName}</a></li>
                 })
             }
         </ul>
         <PrimaryBtn2 btnText='Sign In' />
+        <div className='nav-ham'>
+            <div className='nav-ham-bar'>
+            </div>
+            <div className='nav-ham-bar'>
+            </div>
+            <div className='nav-ham-bar'>
+            </div>
+        </div>
     </nav>
 }
 

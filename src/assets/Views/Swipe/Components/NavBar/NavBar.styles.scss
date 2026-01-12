@@ -5,6 +5,13 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 0 var(--spacing-xl) 0;
+    width: 100%;
+    padding: 0 var(--spacing-md);
+    box-sizing: border-box;
+
+    .nav-ham {
+        display: none;
+    }
 
     .nav-links-list {
         display: flex;

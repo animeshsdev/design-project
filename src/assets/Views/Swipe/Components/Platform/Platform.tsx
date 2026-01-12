@@ -31,8 +31,6 @@ const PlatformSection = () => {
                                 payment success rates, and deliver seamless customer experiences,
                                 transforming payments into a strategic advantage rather than a limitation.
                             </p>
-
-                            <PrimaryBtn btnText="Start now" />
                         </>
                     }
                     right={
@@ -47,7 +45,7 @@ const PlatformSection = () => {
                         </p>
                     }
                 />
-
+                <PrimaryBtn btnText="Start now" />
             </div>
         </div>
     )
